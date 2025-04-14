@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+}
+
+svg {
+    color: currentColor;
+}
+
+input {
+    background-color: white;
+    color: crimson;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FIN DE RESET */
+
+body{
+    font-family: Rubrik;
+}
+@font-face {
+    font-family: Rubrik;
+    src: url('../../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+/* HEADER */
+.Wrapper-header {
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.Container-header {
+    width: 80%;
+    /* background-color: aquamarine; */
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    left: calc(25%);
+}
+
+.Header-menu-hamburguesa {
+    display: none;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(211, 211, 211, 0.5);
+    margin: .5rem;
+}
+
+.Header-menu-hamburguesa:hover {
+    cursor: pointer;
+}
+.Menu-nav{
+    width: 100%;
+}
+.Menu-ul {
+    width: 80%;
+    margin: auto;
+    /* background-color: pink; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu-li {
+    width: 50%;
+    background-color: rgba(253, 253, 253, 0.5);
+    text-align: center;
+
+    font-size: 1.2rem;
+    color: white;
+}
+.Menu-li:hover {
+    background-color: rgba(250, 139, 139, 0.5);
+}
+
+/* FIN HEADER */
+/* MAIN */
+/* sección parallax */
+.Section-parallax {
+    height: 90vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    background-image: url(../../assets/imgs/Instagram/INICIO.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Parallax-logo {
+    width: 40%;
+    /* background-color: grey; */
+    margin: auto;
+
+
+}
+
+/* fin de sección parallax */
+/* sección servicios */
+.Section-services,
+.Article-services {
+    width: 100%;
+    background-color: darkgray;
+}
+
+
+.Services-h2 {
+    width: 50%;
+    background-color: aliceblue;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.Services-ul {
+    width: 50%;
+    background-color: grey;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Trigger {
+    width: 90px;
+    height: 3px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.Services-li {
+    width: 90%;
+    height: 200px;
+    background-color: slateblue;
+    color: white;
+    box-shadow: 2px 4px 5px #0000007b;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: slideUp 2s ease 1 1s backwards;
+
+}
+
+.Services-li:nth-child(even) {
+    margin: .5rem auto .5rem .5rem;
+}
+
+.Services-li h3 {
+    font-size: 3rem;
+    margin: .5rem auto .5rem .5rem;
+
+}
+
+.Services-imgs {
+    width: 12rem;
+    margin: auto 1rem auto 15rem;
+    background-color: lightblue;
+    object-fit: fill;
+    object-fit: contain;
+    object-fit: cover;
+}
+
+/* Fin sección servicios */
+/* sección formulario */
+.Section-subscribe {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.Wrapper-subs {
+    width: 100%;
+    background-color: darkgray;
+    margin: 2rem auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sub-left {
+    width: 70%;
+    background-color: gray;
+}
+
+.Sub-left-h4 {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 1rem 3rem;
+}
+
+.Form-left {
+    width: 60%;
+    background-color: lightcyan;
+    margin: 5rem;
+
+}
+
+.Form-right {
+    width: 50%;
+    background-color: blue;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6b6b;
+    cursor: pointer;
+}
+
+.Sub-right {
+    width: 30%;
+    background-color: antiquewhite;
+    position: relative;
+    top: 0;
+}
+
+.Sub-right-container-img-background {
+    width: 100%;
+    background-color: transparent;
+    object-fit: fill;
+    object-fit: contain;
+    object-fit: cover;
+
+}
+
+.Sub-right-container-rrss {
+    width: 5rem;
+    background-color: red;
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+}
+
+.Rrss-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 2.5rem;
+
+}
+
+.Rrss-li {
+    width: 4rem;
+    min-height: 4rem;
+    background-color: lightblue;
+    fill: white;
+}
+
+/* Fin sección formulario */
+
+/* Fin del main */
+
+/* Footer */
+.Wrapper-footer {
+    width: 100%;
+    background-color: lightgray;
+
+}
+
+.Footer-policy {
+    width: 90%;
+    background-color: grey;
+    margin: auto;
+}
+
+.Policy-ul {
+    width: 50%;
+    background-color: darkkhaki;
+    margin: auto 2rem auto auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Footer-copy {
+    width: 10rem;
+    background-color: aliceblue;
+    margin: 2rem 8rem 1rem auto;
+}
+
+/* Fin Footer */
+
+/* MediaQuerys */
+@media (min-width:1200px) {
+    .Services-imgs {
+        margin: auto 1rem auto auto;
+    }
+
+    .Sub-right-container-img-background {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .Sub-right-container-rrss {
+        top: 25%;
+    }
+}
+
+@media (min-width:992px) {
+    .Container-header {
+        left: calc(10%);
+    }
+
+    .Services-ul {
+        width: 80%;
+    }
+
+    .Services-imgs {
+        margin: auto 1rem auto auto;
+    }
+
+    .Form-left {
+        width: 80%;
+        background-color: lightcyan;
+        margin: 1rem;
+
+    }
+
+    .Sub-right-container-rrss {
+        top: 5%;
+    }
+
+    .Rrss-ul {
+        gap: .5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .Container-header {
+        width: 60%;
+    }
+
+    .Parallax-logo {
+        width: 60%;
+    }
+
+    .Services-ul {
+        width: 80%;
+    }
+
+    .Services-li {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+
+    .Services-li h3 {
+        margin: auto;
+    }
+
+    .Services-imgs {
+        margin: auto auto 1rem;
+    }
+
+    form {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Form-left {
+        width: 80%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    .Form-right {
+        width: 80%;
+    }
+
+    .Sub-right {
+        position: initial;
+    }
+
+    .Sub-right-container-img-background {
+        display: none;
+    }
+
+    .Sub-right-container-rrss {
+        position: initial;
+        margin: auto;
+    }
+
+    .Container-rrss {
+        gap: 1rem;
+    }
+
+    .Rrss-ul {
+        margin: auto;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .Container-header {
+        width: 100%;
+        justify-content: flex-start;
+        left: 1rem;
+    }
+
+    .Parallax-logo {
+        width: 80%;
+    }
+
+    .Header-menu-hamburguesa {
+        width: 2rem;
+        display: block;
+    }
+
+    .Menu-ul {
+        width: 70%;
+        display: none;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .Menu-ul.isActive {
+        display: flex;
+    }
+
+    .Menu-li {
+        margin: 1rem auto auto .5rem;
+    }
+
+    .Services-h2 {
+        width: 90%;
+    }
+
+    .Services-ul {
+        width: 100%;
+    }
+
+    .Services-li {
+        width: 100%;
+        height: auto;
+        flex-flow: column nowrap;
+    }
+
+    .Services-li:nth-child(even) {
+        margin: .5rem auto .5rem;
+    }
+
+    .Wrapper-subs {
+        flex-flow: column nowrap;
+    }
+
+    .Sub-left {
+        width: 100%;
+    }
+
+    .Form-left {
+        width: 100%;
+        margin: 0;
+    }
+
+    .Rrss-ul {
+        flex-flow: row nowrap;
+    }
+
+    .Sub-right-container-rrss {
+        width: 90%;
+        top: 40%;
+        right: 5%;
+    }
+
+    .Sub-right {
+        width: 100%;
+    }
+}
+
+@media (max-width:425px) {}
+
+/* Fin de MediAQuerys */
+/* Keyframes */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+}
