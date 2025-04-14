@@ -69,8 +69,12 @@ form {
 
 /* FIN DE RESET */
 
-body {
-    font-family: "Rubik", sans-serif;
+body{
+    font-family: Rubrik;
+}
+@font-face {
+    font-family: Rubrik;
+    src: url('../../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
 }
 
 /* HEADER */
@@ -105,9 +109,12 @@ body {
 .Header-menu-hamburguesa:hover {
     cursor: pointer;
 }
-
-.Header-menu-sticky {
+.Menu-nav{
     width: 100%;
+}
+.Menu-ul {
+    width: 80%;
+    margin: auto;
     /* background-color: pink; */
 
     display: flex;
@@ -116,15 +123,16 @@ body {
     align-items: center;
 }
 
-.Header-menu-quienes-somos,
-.Header-menu-servicios,
-.Header-menu-Contacta {
-    width: calc(100%/3);
-    background-color: rgba(253, 253, 253, 0.423);
+.Menu-li {
+    width: 50%;
+    background-color: rgba(253, 253, 253, 0.5);
     text-align: center;
 
     font-size: 1.2rem;
     color: white;
+}
+.Menu-li:hover {
+    background-color: rgba(250, 139, 139, 0.5);
 }
 
 /* FIN HEADER */
@@ -159,16 +167,11 @@ body {
 /* fin de sección parallax */
 /* sección servicios */
 .Section-services,
-.Wrapper-services {
+.Article-services {
     width: 100%;
     background-color: darkgray;
 }
 
-.Wrapper-h2 {
-    width: 100%;
-    background-color: grey;
-    margin: 2rem auto;
-}
 
 .Services-h2 {
     width: 50%;
@@ -350,7 +353,6 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
-.Policy-a {}
 
 .Footer-copy {
     width: 10rem;
@@ -490,20 +492,18 @@ input[type="submit"]:hover {
         display: block;
     }
 
-    .Header-menu-sticky {
+    .Menu-ul {
         width: 70%;
         display: none;
         flex-flow: column nowrap;
         align-items: flex-start;
     }
 
-    .Header-menu-sticky.isActive {
+    .Menu-ul.isActive {
         display: flex;
     }
 
-    .Header-menu-quienes-somos,
-    .Header-menu-servicios,
-    .Header-menu-Contacta {
+    .Menu-li {
         margin: 1rem auto auto .5rem;
     }
 
