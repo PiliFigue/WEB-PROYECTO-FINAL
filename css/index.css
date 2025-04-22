@@ -87,7 +87,7 @@ body{
 }
 @font-face {
     font-family: Rubrik;
-    src: url('../../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+    src: url('assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
 }
 
 /* HEADER */
@@ -160,7 +160,7 @@ body{
     color: var(--color-fonts);
     text-align: center;
 
-    background-image: url(/assets/imgs/webm/INICIO.webp);
+    background-image: url(assets/imgs/webm/INICIO.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
