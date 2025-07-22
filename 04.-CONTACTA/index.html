@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA HERRADURA-CONTACTA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="../04.-CONTACTA/js/index.js"></script>
+    <link rel="stylesheet" href="../contacta/css/index.css">
+    <script defer src="../contacta/js/index.js"></script>
 </head>
 
 <body>
 
     <!-- header -->
+
     <header>
         <section class="Wrapper-header">
             <div class="Container-h1">
@@ -19,25 +20,45 @@
             </div>
             <div class="Container-menu">
                 <span class="Header-menu-hamburguesa">
-                    <img src="../assets/Icons/menu.svg" alt="Menu-hamburguesa" class="Menu-hamburguesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"
+                        class="Menu-hamburguesa">
+                        <use xlink:href="#Menu-hamburguesa"></use>
+                        <symbol id="Menu-hamburguesa">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </symbol>
+                    </svg>
+
                 </span>
                 <nav class="Menu-nav">
                     <ul class="Menu-ul">
                         <!-- Enlaces internos -->
                         <li class="Menu-li">
-                            <a class="Menu-li-a" href="../index.html" title="Inicio-a">INICIO</a>
+                            <a class="Menu-li-a" href="../index.html" title="Inicio">INICIO</a>
                         </li>
                         <li class="Menu-li">
-                            <a class="Menu-li-a" href="../02.-QUIENES_SOMOS/index.html" title="Quienes-a">QUIENES SOMOS</a>
+                            <a class="Menu-li-a" href="../quienes_somos/index.html" title="Quienes">QUIENES SOMOS</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </section>
     </header>
+
     <!-- /header -->
+
+    <!-- Sección h2 -->
+    <section class="Wrapper-h2">
+        <div class="Container-h2">
+            <h2 class="Contact-h2">
+                PUEDES ENCONTRARNOS EN:
+            </h2>
+        </div>
+    </section>
+    <!-- /Sección h2 -->
+
     <!-- Sección contacto -->
-    
+
     <div class="Contact">
         <div class="Wrapper-contact-up">
             <ul class="Contact-ul">
@@ -55,6 +76,35 @@
             </ul>
         </div>
     </div>
+
+    <!-- /Sección contacto -->
+
+    <!-- footer -->
+
+    <footer>
+        <div class="Wrapper-footer">
+            <div class="Footer-policy">
+                <ul class="Policy-ul">
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Cookies" target="_blank" rel="noreferrer">Política de
+                            Cookies</a>
+                    </li>
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Policy" target="_blank" rel="noreferrer">Política de
+                            Privacidad</a>
+                    </li>
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Legal" target="_blank" rel="noreferrer">Aviso Legal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Footer-copy">
+                <div class="Copy">&copy;La Herradura 2020</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /footer -->
 </body>
 
 </html>
