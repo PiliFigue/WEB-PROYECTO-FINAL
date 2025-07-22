@@ -5,88 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA HERRADURA-QUIENES-SOMOS</title>
-    <link rel="stylesheet" href="../02.-QUIENES_SOMOS/css/index.css">
-    <script defer src="../02.-QUIENES_SOMOS/js/index.js"></script>
+    <link rel="stylesheet" href="../quienes_somos/css/index.css">
+    <script defer src="../quienes_somos/js/index.js"></script>
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <section class="Wrapper-header">
-            <div class="Container-h1">
-                <h1 class="Header-h1">QUIENES SOMOS</h1>
+        <section class="Wrapper-section">
+            <div class="Container-header">
+                <h1 class="H1-header">QUIENES SOMOS</h1>
             </div>
             <div class="Container-menu">
                 <span class="Header-menu-hamburguesa">
-                    <img src="../assets/Icons/menu.svg" alt="Menu-hamburguesa" class="Menu-hamburguesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"
+                        class="Menu-hamburguesa">
+                        <use xlink:href="#Menu-hamburguesa"></use>
+                        <symbol id="Menu-hamburguesa">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </symbol>
+                    </svg>
                 </span>
                 <nav class="Menu-nav">
                     <ul class="Menu-ul">
                         <!-- Enlaces internos -->
                         <li class="Menu-li">
-                            <a class="Menu-li-a" href="../index.html" title="Inicio-a">INICIO</a>
+                            <a class="Menu-li-a" href="../index.html" title="Inicio">INICIO</a>
                         </li>
                         <li class="Menu-li">
-                            <a class="Menu-li-a" href="../04.-CONTACTA/index.html" title="Quienes-a">CONTACTA</a>
+                            <a class="Menu-li-a" href="../contacta/index.html" title="Quienes">CONTACTA</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </section>
     </header>
+
     <!-- /header -->
-     <!-- main -->
-      <!-- Sección Team -->
+
+    <!-- main -->
+    <!-- Seccion Introducción  -->
+
+    <section class="Introduction">
+        <div class="Introduction_wrapper">
+            <h2 class="Introduction_h2">
+                Nuestro equipo conformado por expertos en la materia de salud y psicopedagogía
+            </h2>
+        </div>
+    </section>
+
+    <!-- /Seccion Introducción  -->
+    <!-- Sección Team -->
+
     <section class="Grid">
         <div class="Grid-team">
             <div class="Team">
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Ana.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Ana María Baus González</h2>
-                    <p class="Team-p">Licenciada en pedagogía, especialista en trastornos de conducta. Coordinadora de los servicios deportivos y de ocio del centro ecuestre la herradura.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/ana_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/ana_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/ana_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/ana.webp" alt="ana" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Ana</h3>
+                    <p class="Team-p">Licenciada en pedagogía, especialista en trastornos de conducta. Coordinadora de
+                        los servicios deportivos y de ocio del centro ecuestre la herradura.</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Marian.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Marian Sillero Reyes</h2>
-                    <p class="Team-p">Licenciada en pedagogía, experta en terapia asistida con caballos, especialista en intervención logopédica en menores y reeducación psicopedagógica. Coordinadora de los servicios terapéuticos y los proyectos educativos del centro la Herradura.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/marian_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/marian_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/marian_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/marian.webp" alt="marian" class="Team-img" loading="lazy">
+                    </picture class="Team_picture">
+                    <h3 class="Team-name">Marian</h3>
+                    <p class="Team-p">Licenciada en pedagogía, experta en terapia asistida con caballos, especialista en
+                        intervención logopédica en menores y reeducación psicopedagógica. Coordinadora de los servicios
+                        terapéuticos y los proyectos educativos del centro la Herradura.</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Rocío.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Rocío Figueruela Fernandez</h2>
-                    <p class="Team-p">Licenciada en psicología, experta en terapia asistida con caballos. Responsable y formadora del Ciclo “Técnica en Guía en el Medio Natural y de Tiempo Libre”</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/rocio_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/rocio_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/rocio_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/rocio.webp" alt="rocio" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Rocío</h3>
+                    <p class="Team-p">Licenciada en psicología, experta en terapia asistida con caballos. Responsable y
+                        formadora del Ciclo “Técnica en Guía en el Medio Natural y de Tiempo Libre”</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Valme.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Valme Rodriguez</h2>
-                    <p class="Team-p">Graduada en fisioterapia. Especialista en atención temprana, neuropediatría y daño cerebral adquirido. Formada en yoga</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/valme_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/valme_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/valme_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/valme.webp" alt="valme" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Valme</h3>
+                    <p class="Team-p">Graduada en fisioterapia. Especialista en atención temprana, neuropediatría y daño
+                        cerebral adquirido. Formada en yoga</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/'May'.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Maria del Carmen (Mai)</h2>
-                    <p class="Team-p">Graduada en administración y dirección de empresas. Responsable de administración y atención al cliente.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/lucia_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/lucia_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/lucia_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/may.webp" alt="lucia" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Lucía</h3>
+                    <p class="Team-p">Graduada en administración y dirección de empresas. Responsable de administración
+                        y atención al cliente.</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Marina.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Marina Calderon</h2>
-                    <p class="Team-p">Técnico Deportivo en Equitación, Técnico Guía en el Medio natural y tiempo libre, Técnico Superior en Actividades Físicas y animación Deportiva. Responsable de la formación en equitación del nivel de perfeccionamiento en las disciplinas de salto u completo en el centro ecuestre la Herradura.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/marina_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/marina_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/marina_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/marina.webp" alt="marina" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Marina</h3>
+                    <p class="Team-p">Técnico Deportivo en Equitación, Técnico Guía en el Medio natural y tiempo libre,
+                        Técnico Superior en Actividades Físicas y animación Deportiva. Responsable de la formación en
+                        equitación del nivel de perfeccionamiento en las disciplinas de salto u completo en el centro
+                        ecuestre la Herradura.</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/María.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Maria Rey</h2>
-                    <p class="Team-p">Técnico deportivo en equitación y rutas. Responsable de la formación en equitación de los niveles de iniciación y medio en el centro ecuestre la Herradura.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/maria_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/maria_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/maria_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/maria.webp" alt="maria" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Maria</h3>
+                    <p class="Team-p">Técnico deportivo en equitación y rutas. Responsable de la formación en equitación
+                        de los niveles de iniciación y medio en el centro ecuestre la Herradura.</p>
                 </div>
                 <div class="Team-contain">
-                    <img src="../assets/imgs/webm/Juan.webp" alt="Team-img" class="Team-img" loading="lazy">
-                    <h2 class="Team-name">Juan Antonio Salguero</h2>
-                    <p class="Team-p">Técnico en Guía en el medio Natural y de tiempo libre. Responsable del mantenimiento y cuidado de los caballos del centro ecuestre. Monitor en las actividades de ocio.</p>
+                    <picture class="Team-picture">
+                        <source srcset="../assets/imgs/webm/pantallas_grandes/juan_grande.webp"
+                            media="(min-width:1025px)" type="image/webp">
+                        <source srcset="../assets/imgs/webm/tablets/juan_tablet.webp" media="(max-width:1024px)"
+                            type="image/webp">
+                        <source srcset="../assets/imgs/webm/moviles/juan_movil.webp" media="(max-width:480px)"
+                            type="image/webp">
+                        <img src="../assets/imgs/webm/juan.webp" alt="juan" class="Team-img" loading="lazy">
+                    </picture>
+                    <h3 class="Team-name">Juan</h3>
+                    <p class="Team-p">Técnico en Guía en el medio Natural y de tiempo libre. Responsable del
+                        mantenimiento y cuidado de los caballos del centro ecuestre. Monitor en las actividades de ocio.
+                    </p>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- /sección Team -->
-     <!-- /main -->
 
+    <!-- /main -->
+
+    <!-- footer -->
+
+    <footer>
+        <div class="Wrapper-footer">
+            <div class="Footer-policy">
+                <ul class="Policy-ul">
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Cookies" target="_blank" rel="noreferrer">Política de
+                            Cookies</a>
+                    </li>
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Policy" target="_blank" rel="noreferrer">Política de
+                            Privacidad</a>
+                    </li>
+                    <li class="Policy-li">
+                        <a href="#" class="Policy-a" title="Legal" target="_blank" rel="noreferrer">Aviso Legal</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Footer-copy">
+                <div class="Copy">&copy;La Herradura 2020</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /footer -->
 </body>
 
 </html>
