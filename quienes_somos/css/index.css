@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe,
+svg {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-family: Rubrik;
+    color: var(--color-fonts);
+    background-color: var(--color-oscuro);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* FIN DE RESET */
+
+/* VARIABLES */
+
+:root {
+    --color-oscuro: rgba(34, 34, 34);
+    --color-rosado: rgb(255, 102, 102);
+    --color-rosadoopacitty: rgba(255, 102, 102, 0.5);
+    --color-fondo: rgba(68, 68, 68, 0.5);
+    --color-fonts: rgba(255, 255, 255);
+    --color-buttons: rgba(253, 253, 253, 0.5);
+    --color-bttnshover: rgba(255, 102, 102, 0.5);
+}
+
+/* FIN DE VARIABLES */
+
+@font-face {
+    font-family: Rubrik;
+    src: url('../../assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+/* FIN DE VARIABLES */
+
+/* HEADER */
+
+.Wrapper-section {
+    width: 100%;
+    background-color: var(--color-rosado);
+    padding: 0.3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Container-header {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.H1-header {
+    font-size: 1.2em;
+    margin: auto 3rem;
+    color: var(--color-fonts);
+}
+
+.Container-menu {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-menu-hamburguesa {
+    display: none;
+    width: 15%;
+    background-color: var(--color-buttons);
+    margin: auto auto auto 10rem;
+}
+
+.Header-menu-hamburguesa:hover {
+    cursor: pointer;
+}
+
+.Menu-nav {
+    width: 100%;
+}
+
+.Menu-ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu-li {
+    width: 30%;
+    text-align: center;
+    font-size: 1em;
+    color: var(--color-fonts);
+}
+
+.Menu-li:hover {
+    background-color: var(--color-rosadoopacitty);
+    border: white solid 3px;
+    border-radius: 1rem;
+}
+
+/* FIN HEADER */
+
+/* Sección Introducción  */
+
+.Introduction_h2{
+    width: 60rem;
+    margin: 5rem 8.5rem 2rem;
+    font-size: 1.5rem;
+}
+
+/* /Sección Introducción */
+
+/* Sección Team */
+
+.Grid-team{
+    width: 100%;
+    background-color: var(--color-oscuro);
+    margin: auto;
+}
+.Team{
+    width: 90%;
+    margin: 10rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+.Team-contain{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.Team-picture{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Team-img{
+    width: 80%;
+    padding: .5rem;
+    border: white solid 3px;
+    border-radius: 1rem;
+    object-fit: fill;
+    object-fit: contain;
+    
+    transition: transform 0.5s ease;
+}
+.Team-img:hover{
+    cursor: pointer;
+    transform: scale(.97);
+}
+.Team-name{
+    font-size: 1.1rem;
+}
+.Team-p{
+    height: auto;
+    font-size: .9rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+.Team-p.isActive{
+    opacity: 1;
+}
+
+/* /Sección Team */
+
+/* Footer */
+
+.Wrapper-footer {
+    width: 100%;
+    background-color: var(--color-oscuro);
+}
+.Footer-policy {
+    width: 90%; 
+    padding: 1rem;
+}
+.Policy-ul {
+    width: 50%;
+    margin:2rem auto auto;
+    color: var(--color-fonts);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer-copy {
+    width: 12rem;
+    padding: 1rem;
+    margin: 1rem 53rem;
+    color: var(--color-fonts);
+}
+
+/* Fin Footer */
+
+/*MediaQuerys*/
+
+@media (max-width:1441px) {
+     .Introduction_h2{
+        width: 80%;
+        margin: 5rem auto;
+    }
+}
+@media (min-width:1200px) {
+    .Menu-ul {
+        width: 60%;
+    }
+    .Introduction_h2{
+        margin: 5rem 14rem 2rem;
+    }
+   .Footer-copy{
+        margin: 1rem auto;
+   }
+   .Footer-policy{
+    margin: auto;
+   }
+}
+@media (min-width:992px) {
+    .Menu-li {
+        width: 60%;
+    }
+    .Introduction_h2 {
+        margin: 5rem 2rem 2rem;
+    }
+    .Team{
+        width: 100%;
+        margin:auto;
+    }
+    .Footer-copy{
+        margin: 1rem auto;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .Menu-ul {
+        width: 100%;
+    }
+    .Menu-li {
+        width: 50%;
+    }
+    .Team{
+        margin: 10rem auto;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .Footer-policy{
+        margin: auto;
+    } 
+    .Footer-copy{
+        margin: 1rem auto;
+    }
+}
+@media (max-width:600px) {
+    .H1-header {
+        margin: auto;
+    }
+    .Container-menu {
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .Header-menu-hamburguesa {
+        width: 2rem;
+        margin: auto .5rem auto 5rem;
+        display: block;
+    }
+
+    .Menu-nav{
+        margin: 0;
+    }
+    .Menu-ul {
+        width: 70%;
+        display: none;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .Menu-ul.isActive {
+        width: 5%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin: auto;
+    }
+
+    .Menu-li {
+        margin: .5rem auto auto .5rem;
+    }
+
+    .Menu-li-a {
+        width: 8rem;
+    }
+    
+    .Team{
+        margin: 10rem auto;
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .Footer-policy{
+        margin: auto;
+    }
+    .Footer-copy{
+        margin: 1rem auto;
+    }
+}
+@media (max-width:425px) {
+    .Header-menu-hamburguesa {
+        margin: auto auto auto 7rem;
+    }   
+}
+
+/* Fin de MediAQuerys */
